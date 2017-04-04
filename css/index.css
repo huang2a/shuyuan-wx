@@ -1,0 +1,196 @@
+/*颜色系统*/
+body{
+  background: #EBEBEB;
+  color: #333333;
+}
+.bg_lv{
+  background:#3C9;
+}
+.col_lv{
+  color: #3C9;
+}
+/*重置样式*/
+.weui-btn{
+  font-size: 16px;
+}
+.weui-article{
+  font-size: 14px;
+  padding: 0;
+}
+.weui-article section{
+  margin: 0;
+}
+.weui-article p{
+  margin: 0;
+}
+/*全局控制*/
+.page_header{
+  height: 40px;
+  line-height: 40px;
+}
+.page_header h3{
+  color: #fff;
+  font-size: 18px;
+  padding:0 5px;
+  text-align: center;
+  overflow: hidden;
+}
+.page_bady {
+  padding:5px 10px;
+  overflow: auto;
+  background-color: #FFF;
+}
+.page_fooder{
+  position: fixed;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top:solid 1px #d9d9d9;
+}
+.layout_mgb10{
+  margin-bottom: 10px;
+}
+.layout_pdb50{
+  padding-bottom: 50px;
+}
+.layout_text_center{
+  text-align: center;
+}
+.layout_title{
+  font-size: 20px;
+  text-align: center;
+}
+/*首页样式*/
+.page_banner{
+  width: 100%;
+}
+.page_banner img{
+  width: 100%;
+  display:block;
+}
+.data_file_icon .iconfont{
+  font-size: 40px;
+}
+.data_file_icon .col1{
+  color: #357B38;
+}
+.data_file_icon .col2{
+  color: #1296db;
+}
+.data_file_icon .col3{
+  color: #1E527D;
+}
+.data_file_title{
+  font-size: 14px;
+  color: #333;
+}
+.page_time_record{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.page_time_record .time_line{
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 18px;
+}
+.page_time_record .item_dot_new{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  border: 1px solid #32cc99;
+  border-radius: 50%;
+  margin-left: -9px;
+}
+.page_time_record .item_dot_new1{
+  position: absolute;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-color: #32cc99;
+
+}
+.page_time_record .item_line_new{
+  padding-top: 42px;
+  height: 100%;
+  width: 100%;
+}
+.page_time_record .item_line_new1{
+  height: 100%;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+.record_item {
+    padding: 8px 0;
+    background: #fff;
+    margin-left: 2.6rem;
+}
+.record_template {
+    padding-top: 12px;
+    font-weight: 700;
+    color: #9b9b9b;
+}
+.record_item .record_template_new {
+    color: #32cc99;
+}
+.record_item .record_base {
+    height: 2rem;
+}
+.record_item .record_time {
+    float: left;
+    color: #9b9b9b;
+    margin-left: -15px;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.record_item .record_user {
+    height: 100%;
+    white-space: nowrap;
+    padding: 5px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    padding-left: 20px;
+    overflow: hidden;
+    color: #9b9b9b;
+}
+.record_picupload .weui-cell {
+    padding: 0;
+}
+.record_textarea{
+    font-size: 12px;
+    color: #999;
+}
+.weui-cell_primary {
+    align-items: flex-start;
+}
+.weui-cell__bd {
+    flex: 1;
+}
+
+@media screen and (max-width: 320px){
+  .record_ct_picupload .weui-uploader__file {
+      width: 75px;
+      height: 75px;
+  }
+}
+@media screen and (max-width: 375px){
+  .record_ct_picupload .weui-uploader__file {
+    width: 98px;
+    height: 98px;
+  }
+}
+@media screen and (max-width: 414px){
+  .record_ct_picupload .weui-uploader__file {
+    width: 80px;
+    height: 80px;
+  }
+}
