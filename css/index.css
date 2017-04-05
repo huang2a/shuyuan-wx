@@ -51,6 +51,9 @@ body{
 .layout_mgb10{
   margin-bottom: 10px;
 }
+.layout_pd5_10{
+    padding: 5px 10px !important;
+}
 .layout_pdb50{
   padding-bottom: 50px;
 }
@@ -168,6 +171,8 @@ body{
 .record_textarea{
     font-size: 12px;
     color: #999;
+    width: 100%;
+    border: none;
 }
 .weui-cell_primary {
     align-items: flex-start;
@@ -193,4 +198,10 @@ body{
     width: 80px;
     height: 80px;
   }
+}
+
+/*天气数据页面*/
+.horizontal-scroll{
+  width: 100%;
+  overflow-x: auto;
 }

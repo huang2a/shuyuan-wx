@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title>海泉集团农副产品溯源信息查询结果</title>
         <link rel="stylesheet" href="css/weui.min.css"/>
+        <link rel="stylesheet" href="css/swipebox.min.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/iconfont.css">
     </head>
@@ -28,21 +29,21 @@
             <h3 class="layout_title col_lv">档案数据</h3>
             <div class="weui-flex layout_text_center">
                 <div class="weui-flex__item">
-                    <a href="">
+                    <a href="WeatherRecord.html">
                     <div class="data_file_icon">
                         <i class="iconfont icon-huanjingjiance col1"></i>
                     </div>
                     <div class="data_file_title">环境档案</div></a>
                 </div>
                 <div class="weui-flex__item">
-                    <a href="">
+                    <a href="FertilizerRecord.html">
                     <div class="data_file_icon">
                         <i class="iconfont icon-feiliao col2"></i>
                     </div>
                     <div class="data_file_title">化肥档案</div></a>
                 </div>
                 <div class="weui-flex__item">
-                    <a href="">
+                    <a href="PesticideRecord.html">
                     <div class="data_file_icon">
                         <i class="iconfont icon-nongyaocanliu col3"></i>
                     </div>
@@ -117,6 +118,15 @@
                                                     <li class="weui-uploader__file uploadwximgli" datasrc="updatefile/u2414.png" style="background-image: url(updatefile/u2414.png);"></li>
                                                     <li class="weui-uploader__file uploadwximgli" datasrc="updatefile/u2416.png" style="background-image: url(updatefile/u2416.png);"></li>
                                                     <li class="weui-uploader__file uploadwximgli" datasrc="updatefile/u2418.png" style="background-image: url(updatefile/u2418.png);"></li>
+                                                    <a rel="gallery-1" href="updatefile/u2414.png" class="swipebox">
+                                                        <img width="100%" src="updatefile/u2414.png" alt="image">
+                                                    </a>
+                                                    <a rel="gallery-1" href="updatefile/u2416.png" class="swipebox" title="Fog">
+                                                        <img width="100%" src="updatefile/u2416.png" alt="image">
+                                                    </a>
+                                                    <a rel="gallery-1" href="updatefile/u2418.png" class="swipebox">
+                                                        <img width="100%" src="updatefile/u2418.png" alt="image">
+                                                    </a>
                                                 </ul>
                                             </div>
                                         </div>
@@ -135,44 +145,46 @@
             <a href="javascript:;" id="actionSheetBtn" class="weui-btn weui-btn_primary" style="margin: 4px 10px;">添加记录</a>
         </div>
     </body>
-    <!--<script type="text/javascript" src="js/example.js"></script>  -->
     <script type="text/javascript" src="js/weui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
     <script>
-        /* dialog */
-        // document.querySelector('#alertBtn').addEventListener('click', function () {
-        //     weui.alert('1自定义标题的alert', function () {
-        //         console.log('1ok');
-        //     }, {
-        //         title: '1自定义标题'
-        //     });
-        // });
         /* actionSheet */
         document.querySelector('#actionSheetBtn').addEventListener('click', function () {
             weui.actionSheet([{
                 label: '登记农地信息',
                 onClick: function onClick() {
                     console.log('登记农地信息');
-                    window.location.href="test.html";
+                    window.location.href="AddRecord.html";
                 }
             }, {
                 label: '登记作物品种信息',
                 onClick: function onClick() {
                     console.log('登记作物品种信息');
+                    window.location.href="AddRecord.html";
                 }
             }, {
                 label: '播种环节',
                 onClick: function onClick() {
                     console.log('播种环节');
+                    window.location.href="AddRecord.html";
                 }
             },{
                 label: '生长过程',
                 onClick: function onClick() {
                     console.log('生长过程');
+                    window.location.href="AddRecord.html";
                 }
             },{
                 label: '收割过程',
                 onClick: function onClick() {
                     console.log('收割过程');
+                    window.location.href="AddRecord.html";
                 }
             }], [{
                 label: '取消',
