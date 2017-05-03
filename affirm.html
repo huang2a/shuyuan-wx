@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>海泉集团农副产品溯源信息</title>
+        <link rel="stylesheet" href="css/weui.min.css"/>
+        <link rel="stylesheet" href="css/swipebox.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/iconfont.css">
+    </head>
+    <body class="layout_pdb50">
+        <div class="page_header bg_lv layout_mgb10">
+            <h3>记录管理员邀请</h3>
+        </div>
+        <div class="page_bady layout_mgb10">
+            <article class="weui-article">
+                <section>
+                    <p>
+                        管理人员正在邀请您成为溯源信息的记录管理员，此次邀请链接有效时间为15分钟。<br>点击“确定加入”按钮即可成为记录管理员!
+                    </p>
+                </section>
+            </article>
+        </div>
+        <div class="layout_mgb10">
+            <h3 class="layout_title col_lv layout_mgb10">相关操作</h3>
+            <a href="javascript:;" id="actionSheetBtn" class="weui-btn weui-btn_primary" style="margin:10px;">确定加入</a>
+            <a href="javascript:;" id="" class="weui-btn weui-btn_default" style="margin:10px;">取消加入</a>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/weui.min.js"></script>
+    <script>
+        document.querySelector('#actionSheetBtn').addEventListener('click', function () {
+            weui.toast('加入成功', 3000);
+        });
+    </script>
+</html>
