@@ -210,7 +210,36 @@ table {
 .weui-cell__bd {
     flex: 1;
 }
+.drawing-page{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 3rem;
+    height: auto;
+}
+@-webkit-keyframes drawing {
+    0%{
 
+        -webkit-transform: scale(1);
+
+    }
+    25%{
+      -webkit-transform: scale(1.15);
+    }
+    50%{
+        -webkit-transform: rotate(1.25);
+    }
+    75%{
+      -webkit-transform: scale(1.15);
+    }
+    100%{
+        -webkit-transform: rotate(1);
+    }
+}
+
+.loading{
+   -webkit-animation:drawing 0.5s infinite linear ;
+}
 @media screen and (max-width: 320px){
   .record_ct_picupload .weui-uploader__file {
       width: 75px;
